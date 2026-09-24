@@ -1,0 +1,17 @@
+.env
+.env.local
+.env.production
+
+# Backend
+backend/target/
+*.log
+.idea/
+.vscode/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db

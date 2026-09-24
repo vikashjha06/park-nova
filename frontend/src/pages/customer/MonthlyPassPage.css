@@ -1,0 +1,739 @@
+.pn-pass-page {
+  min-height: 100vh;
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at 87% 8%, rgba(0,180,255,.08), transparent 29rem),
+    radial-gradient(circle at 8% 36%, rgba(0,230,118,.05), transparent 25rem),
+    #050b13;
+}
+
+.pn-pass-page * {
+  box-sizing: border-box;
+}
+
+.pn-pass-header {
+  min-height: 82px;
+  padding: 0 clamp(24px,5vw,76px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border-bottom: 1px solid rgba(148,163,184,.09);
+  background: rgba(5,11,19,.86);
+}
+
+.pn-pass-brand {
+  display: inline-flex;
+}
+
+.pn-pass-brand img {
+  width: 126px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.pn-pass-header nav {
+  display: flex;
+  gap: 30px;
+}
+
+.pn-pass-header nav a {
+  color: #8395a7;
+  text-decoration: none;
+  font-size: .77rem;
+  font-weight: 700;
+}
+
+.pn-pass-header nav a:hover {
+  color: #00e6b7;
+}
+
+.pn-pass-shell {
+  width: min(1280px,calc(100% - 64px));
+  margin: 0 auto;
+  padding: 50px 0 80px;
+}
+
+.pn-pass-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.pn-pass-title p,
+.pn-pass-create-copy > p,
+.pn-pass-list-head p {
+  margin: 0 0 8px;
+  color: #00c9a7;
+  font-size: .6rem;
+  font-weight: 900;
+  letter-spacing: .17em;
+}
+
+.pn-pass-title h1 {
+  margin: 0;
+  color: #f3f8fb;
+  font-size: clamp(2.1rem,4vw,3.5rem);
+  line-height: 1.03;
+  letter-spacing: -.045em;
+}
+
+.pn-pass-title h1 em {
+  color: #00e6b7;
+  font-style: normal;
+}
+
+.pn-pass-title > div > span {
+  max-width: 610px;
+  margin-top: 14px;
+  display: block;
+  color: #718498;
+  font-size: .76rem;
+  line-height: 1.65;
+}
+
+.pn-pass-title > button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid rgba(0,201,167,.2);
+  border-radius: 9px;
+  color: #00d8ac;
+  background: rgba(0,201,167,.05);
+  font: inherit;
+  font-size: .64rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.pn-pass-alert {
+  margin-top: 21px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: .67rem;
+  font-weight: 700;
+}
+
+.pn-pass-alert.error {
+  border: 1px solid rgba(251,113,133,.18);
+  color: #fda4af;
+  background: rgba(251,113,133,.05);
+}
+
+.pn-pass-alert.success {
+  border: 1px solid rgba(0,230,118,.18);
+  color: #72eaaa;
+  background: rgba(0,230,118,.05);
+}
+
+.pn-pass-create {
+  margin-top: 31px;
+  padding: 26px;
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 38px;
+  border: 1px solid rgba(0,201,167,.16);
+  border-radius: 20px;
+  background: linear-gradient(145deg,rgba(14,27,40,.96),rgba(7,16,26,.97));
+  box-shadow: 0 25px 70px rgba(0,0,0,.17);
+}
+
+.pn-pass-create-copy h2,
+.pn-pass-list-head h2 {
+  margin: 0;
+  color: #e7f0f4;
+  font-size: 1.15rem;
+}
+
+.pn-pass-create-copy > span {
+  max-width: 470px;
+  margin-top: 9px;
+  display: block;
+  color: #708397;
+  font-size: .68rem;
+  line-height: 1.65;
+}
+
+.pn-pass-feature-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pn-pass-feature-grid > div {
+  padding: 15px;
+  border: 1px solid rgba(148,163,184,.09);
+  border-radius: 12px;
+  background: rgba(3,10,18,.45);
+}
+
+.pn-pass-feature-grid strong,
+.pn-pass-feature-grid span {
+  display: block;
+}
+
+.pn-pass-feature-grid strong {
+  color: #00e6b7;
+  font-size: 1.25rem;
+}
+
+.pn-pass-feature-grid span {
+  margin-top: 4px;
+  color: #617588;
+  font-size: .56rem;
+}
+
+.pn-pass-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pn-pass-form label > span {
+  margin: 0 0 7px 2px;
+  display: block;
+  color: #718599;
+  font-size: .59rem;
+  font-weight: 800;
+}
+
+.pn-pass-form input,
+.pn-pass-form select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  outline: 0;
+  border: 1px solid rgba(148,163,184,.13);
+  border-radius: 10px;
+  color: #e7eff4;
+  background: #07111c;
+  font: inherit;
+  font-size: .7rem;
+}
+
+.pn-pass-form input:focus,
+.pn-pass-form select:focus {
+  border-color: rgba(0,201,167,.5);
+  box-shadow: 0 0 0 3px rgba(0,201,167,.06);
+}
+
+.pn-pass-vehicle {
+  grid-column: 1 / -1;
+}
+
+.pn-pass-form > button {
+  min-height: 46px;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 0;
+  border-radius: 11px;
+  color: #03130d;
+  background: linear-gradient(110deg,#00e676,#00c9a7 60%,#00b4ff);
+  font: inherit;
+  font-size: .7rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.pn-pass-form > button:disabled {
+  opacity: .45;
+  cursor: wait;
+}
+
+.pn-pass-list {
+  margin-top: 31px;
+}
+
+.pn-pass-list-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pn-pass-list-head > span {
+  color: #607487;
+  font-size: .58rem;
+}
+
+.pn-pass-grid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 14px;
+}
+
+.pn-pass-card {
+  overflow: hidden;
+  border: 1px solid rgba(148,163,184,.1);
+  border-radius: 16px;
+  background: linear-gradient(145deg,rgba(14,26,40,.95),rgba(8,17,28,.96));
+}
+
+.pn-pass-card-top {
+  padding: 15px 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(148,163,184,.07);
+}
+
+.pn-pass-card-top span,
+.pn-pass-card-top strong {
+  display: block;
+}
+
+.pn-pass-card-top span {
+  color: #587063;
+  font-size: .48rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.pn-pass-card-top strong {
+  margin-top: 4px;
+  color: #dce7ed;
+  font-size: .7rem;
+}
+
+.pn-pass-card-top i {
+  padding: 5px 8px;
+  border-radius: 7px;
+  font-size: .52rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.pn-pass-card-top i.status-pending {
+  color: #fbbf24;
+  background: rgba(251,191,36,.08);
+}
+
+.pn-pass-card-top i.status-active {
+  color: #4ade80;
+  background: rgba(74,222,128,.08);
+}
+
+.pn-pass-card-top i.status-expired,
+.pn-pass-card-top i.status-cancelled {
+  color: #94a3b8;
+  background: rgba(148,163,184,.08);
+}
+
+.pn-pass-card-location {
+  padding: 15px 17px 0;
+}
+
+.pn-pass-card-location small,
+.pn-pass-card-location strong,
+.pn-pass-card-location span {
+  display: block;
+}
+
+.pn-pass-card-location small {
+  color: #53687a;
+  font-size: .48rem;
+  font-weight: 900;
+}
+
+.pn-pass-card-location strong {
+  margin-top: 5px;
+  color: #dce7ed;
+  font-size: .74rem;
+}
+
+.pn-pass-card-location span {
+  margin-top: 3px;
+  color: #5d7184;
+  font-size: .54rem;
+}
+
+.pn-pass-card-details {
+  padding: 16px 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.pn-pass-card-details span,
+.pn-pass-card-details strong,
+.pn-pass-card-details small {
+  display: block;
+}
+
+.pn-pass-card-details span {
+  color: #596d80;
+  font-size: .53rem;
+}
+
+.pn-pass-card-details strong {
+  margin-top: 4px;
+  color: #dce7ed;
+  font-size: .68rem;
+  line-height: 1.45;
+}
+
+.pn-pass-card-details small {
+  margin-top: 3px;
+  color: #516578;
+  font-size: .51rem;
+}
+
+.pn-pass-actions {
+  min-height: 52px;
+  padding: 10px 17px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid rgba(148,163,184,.07);
+}
+
+.pn-pass-actions button {
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid rgba(148,163,184,.13);
+  border-radius: 8px;
+  color: #8fa0af;
+  background: rgba(15,23,42,.4);
+  font: inherit;
+  font-size: .57rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.pn-pass-actions button.primary {
+  border-color: transparent;
+  color: #03130d;
+  background: linear-gradient(110deg,#00e676,#00c9a7);
+}
+
+.pn-pass-actions button:disabled {
+  opacity: .45;
+}
+
+.pn-pass-state {
+  min-height: 230px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(148,163,184,.13);
+  border-radius: 16px;
+  background: rgba(9,18,29,.55);
+  text-align: center;
+}
+
+.pn-pass-state-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: #00d9aa;
+  background: rgba(0,201,167,.07);
+  font-weight: 900;
+}
+
+.pn-pass-state strong {
+  margin-top: 12px;
+  color: #dce7ed;
+  font-size: .75rem;
+}
+
+.pn-pass-state > span {
+  max-width: 330px;
+  margin-top: 6px;
+  color: #607487;
+  font-size: .6rem;
+  line-height: 1.6;
+}
+
+.pn-pass-spinner {
+  width: 28px;
+  height: 28px;
+  border: 2px solid rgba(148,163,184,.12);
+  border-top-color: #00c9a7;
+  border-radius: 50%;
+  animation: pnPassSpin .75s linear infinite;
+}
+
+@keyframes pnPassSpin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+  .pn-pass-create {
+    grid-template-columns: 1fr;
+  }
+
+  .pn-pass-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .pn-pass-header {
+    min-height: 68px;
+    padding: 0 18px;
+  }
+
+  .pn-pass-brand img {
+    width: 105px;
+    height: 46px;
+  }
+
+  .pn-pass-header nav a {
+    display: none;
+  }
+
+  .pn-pass-header nav a:last-child {
+    display: inline-flex;
+  }
+
+  .pn-pass-shell {
+    width: calc(100% - 32px);
+    padding: 34px 0 55px;
+  }
+
+  .pn-pass-title {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .pn-pass-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .pn-pass-title > button {
+    width: 100%;
+  }
+
+  .pn-pass-create {
+    padding: 18px;
+  }
+
+  .pn-pass-form {
+    grid-template-columns: 1fr;
+  }
+
+  .pn-pass-vehicle,
+  .pn-pass-form > button {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .pn-pass-shell {
+    width: calc(100% - 26px);
+  }
+
+  .pn-pass-title h1 {
+    font-size: 2rem;
+  }
+
+  .pn-pass-feature-grid,
+  .pn-pass-card-details {
+    grid-template-columns: 1fr;
+  }
+
+  .pn-pass-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pn-pass-actions button {
+    width: 100%;
+    min-height: 39px;
+  }
+}
+/* =========================================================
+   DYNAMIC MONTHLY PASS
+   ========================================================= */
+
+.pn-pass-form select:disabled,
+.pn-pass-form input:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.pn-pass-form > button[type="button"] {
+  border: 1px solid rgba(0,201,167,.22);
+  color: #00e6b7;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,230,118,.07),
+      rgba(0,180,255,.06)
+    );
+}
+
+.pn-pass-form > button[type="button"]:not(:disabled):hover {
+  border-color: rgba(0,230,183,.45);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,201,167,.08);
+}
+
+.pn-pass-form > button[type="submit"]:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(0,230,118,.13);
+}
+
+.pn-pass-form > button {
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease,
+    opacity .18s ease;
+}
+
+.pn-pass-quote {
+  grid-column: 1 / -1;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 10px;
+  border: 1px solid rgba(0,201,167,.2);
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(0,180,255,.07),
+      transparent 45%
+    ),
+    rgba(3,12,20,.72);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.015);
+  animation: pnPassQuoteIn .28s ease both;
+}
+
+.pn-pass-quote > div {
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid rgba(148,163,184,.08);
+  border-radius: 10px;
+  background: rgba(7,17,28,.72);
+}
+
+.pn-pass-quote span,
+.pn-pass-quote strong {
+  display: block;
+}
+
+.pn-pass-quote span {
+  color: #62788b;
+  font-size: .53rem;
+  font-weight: 700;
+}
+
+.pn-pass-quote strong {
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+  color: #dce8ed;
+  font-size: .72rem;
+}
+
+.pn-pass-quote > div:last-child {
+  border-color: rgba(0,230,118,.18);
+  background: rgba(0,230,118,.055);
+}
+
+.pn-pass-quote > div:last-child span {
+  color: #67a98a;
+}
+
+.pn-pass-quote > div:last-child strong {
+  color: #00e6a8;
+  font-size: .86rem;
+}
+
+.pn-pass-quote > div:nth-child(5) strong {
+  color: #4ade80;
+}
+
+@keyframes pnPassQuoteIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .pn-pass-create {
+    grid-template-columns: .72fr 1.28fr;
+    gap: 26px;
+  }
+
+  .pn-pass-quote {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .pn-pass-create {
+    grid-template-columns: 1fr;
+  }
+
+  .pn-pass-quote {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .pn-pass-quote {
+    grid-column: auto;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .pn-pass-quote > div {
+    padding: 10px;
+  }
+
+  .pn-pass-form input,
+  .pn-pass-form select,
+  .pn-pass-form > button {
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 390px) {
+  .pn-pass-shell {
+    width: calc(100% - 24px);
+  }
+
+  .pn-pass-create {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .pn-pass-feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pn-pass-quote {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pn-pass-quote span {
+    font-size: .51rem;
+  }
+
+  .pn-pass-quote strong {
+    font-size: .67rem;
+  }
+
+  .pn-pass-quote > div:last-child strong {
+    font-size: .78rem;
+  }
+}

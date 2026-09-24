@@ -1,0 +1,353 @@
+.pn-admin-auth-page {
+  min-height: 100vh;
+  padding: 48px 20px;
+  display: grid;
+  place-items: center;
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(0, 180, 255, 0.12), transparent 30rem),
+    radial-gradient(circle at 12% 80%, rgba(0, 230, 118, 0.08), transparent 28rem),
+    #050b13;
+}
+
+.pn-admin-auth-page * {
+  box-sizing: border-box;
+}
+
+.pn-admin-auth-card {
+  width: min(100%, 470px);
+  padding: 34px;
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(15, 27, 42, 0.96), rgba(7, 15, 25, 0.98));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.32);
+}
+
+.pn-admin-auth-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pn-admin-auth-logo img {
+  width: 128px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.pn-admin-auth-badge {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #00d9aa;
+  font-size: 0.61rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.pn-admin-auth-badge.centered {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pn-admin-auth-badge > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00e676;
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.55);
+}
+
+.pn-admin-auth-card h1 {
+  margin: 10px 0 0;
+  color: #f3f8fb;
+  font-size: 2rem;
+  letter-spacing: -0.035em;
+}
+
+.pn-admin-auth-copy,
+.pn-admin-waiting > p,
+.pn-admin-decision-card > p {
+  margin: 12px 0 0;
+  color: #788b9e;
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.pn-admin-auth-form {
+  margin-top: 27px;
+  display: grid;
+  gap: 17px;
+}
+
+.pn-admin-auth-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.pn-admin-auth-form label > span {
+  color: #a7b6c4;
+  font-size: 0.67rem;
+  font-weight: 800;
+}
+
+.pn-admin-auth-form input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  outline: none;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 11px;
+  color: #edf5f8;
+  background: rgba(3, 10, 18, 0.72);
+  font: inherit;
+  font-size: 0.77rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.pn-admin-auth-form input:focus {
+  border-color: rgba(0, 201, 167, 0.5);
+  box-shadow: 0 0 0 3px rgba(0, 201, 167, 0.07);
+}
+
+.pn-admin-auth-form input::placeholder {
+  color: #4f6275;
+}
+
+.pn-admin-auth-primary,
+.pn-admin-auth-secondary {
+  min-height: 46px;
+  border-radius: 11px;
+  font: inherit;
+  font-size: 0.71rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.pn-admin-auth-primary {
+  margin-top: 3px;
+  border: 0;
+  color: #03130d;
+  background: linear-gradient(110deg, #00e676, #00c9a7 60%, #00b4ff);
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.pn-admin-auth-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.pn-admin-auth-primary:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.pn-admin-auth-secondary {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  color: #91a4b5;
+  background: rgba(148, 163, 184, 0.045);
+}
+
+.pn-admin-auth-alert {
+  padding: 11px 12px;
+  border-radius: 9px;
+  font-size: 0.67rem;
+  line-height: 1.55;
+}
+
+.pn-admin-auth-alert.error {
+  border: 1px solid rgba(251, 113, 133, 0.18);
+  color: #fda4af;
+  background: rgba(251, 113, 133, 0.055);
+}
+
+.pn-admin-auth-alert.info {
+  border: 1px solid rgba(0, 201, 167, 0.18);
+  color: #8be8d5;
+  background: rgba(0, 201, 167, 0.055);
+}
+
+.pn-admin-auth-security {
+  margin-top: 25px;
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-top: 1px solid rgba(148, 163, 184, 0.08);
+  color: #526577;
+  font-size: 0.59rem;
+  text-align: center;
+}
+
+.pn-admin-auth-security span {
+  color: #00c9a7;
+}
+
+.pn-admin-waiting {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.pn-admin-waiting-icon {
+  width: 72px;
+  height: 72px;
+  margin: 8px auto 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(0, 201, 167, 0.22);
+  border-radius: 20px;
+  background: rgba(0, 201, 167, 0.06);
+}
+
+.pn-admin-waiting-icon > span {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 230, 118, 0.2);
+  border-top-color: #00e676;
+  border-radius: 50%;
+  animation: pnAdminSpin 0.8s linear infinite;
+}
+
+.pn-admin-waiting-status {
+  margin-top: 24px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid rgba(0, 201, 167, 0.13);
+  border-radius: 10px;
+  color: #91a9a3;
+  background: rgba(0, 201, 167, 0.035);
+  font-size: 0.67rem;
+  font-weight: 800;
+}
+
+.pn-admin-waiting-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00e676;
+  box-shadow: 0 0 11px rgba(0, 230, 118, 0.5);
+  animation: pnAdminPulse 1.6s ease-in-out infinite;
+}
+
+.pn-admin-waiting .pn-admin-auth-alert {
+  margin-top: 14px;
+  text-align: left;
+}
+
+.pn-admin-decision-card {
+  text-align: center;
+}
+
+.pn-admin-decision-card .pn-admin-auth-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.pn-admin-decision-icon {
+  width: 68px;
+  height: 68px;
+  margin: 30px auto 0;
+  display: grid;
+  place-items: center;
+  border-radius: 19px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.pn-admin-decision-icon.approved {
+  border: 1px solid rgba(0, 230, 118, 0.25);
+  color: #66f0a4;
+  background: rgba(0, 230, 118, 0.07);
+}
+
+.pn-admin-decision-icon.denied,
+.pn-admin-decision-icon.error {
+  border: 1px solid rgba(251, 113, 133, 0.2);
+  color: #fb7185;
+  background: rgba(251, 113, 133, 0.06);
+}
+
+.pn-admin-decision-card .pn-admin-auth-alert {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.pn-admin-decision-loader {
+  width: 42px;
+  height: 42px;
+  margin: 32px auto 0;
+  border: 3px solid rgba(148, 163, 184, 0.1);
+  border-top-color: #00c9a7;
+  border-radius: 50%;
+  animation: pnAdminSpin 0.8s linear infinite;
+}
+
+@keyframes pnAdminSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pnAdminPulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 520px) {
+  .pn-admin-auth-page {
+    padding: 24px 14px;
+    align-items: start;
+  }
+
+  .pn-admin-auth-card {
+    margin-top: 20px;
+    padding: 25px 20px;
+    border-radius: 18px;
+  }
+
+  .pn-admin-auth-logo img {
+    width: 112px;
+    height: 49px;
+  }
+
+  .pn-admin-auth-card h1 {
+    font-size: 1.7rem;
+  }
+
+  .pn-admin-auth-form input {
+    min-height: 50px;
+  }
+
+  .pn-admin-auth-primary,
+  .pn-admin-auth-secondary {
+    min-height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pn-admin-auth-page *,
+  .pn-admin-auth-page *::before,
+  .pn-admin-auth-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* Keep Chrome autofill consistent with Park Nova dark theme */
+.pn-admin-auth-form input:-webkit-autofill,
+.pn-admin-auth-form input:-webkit-autofill:hover,
+.pn-admin-auth-form input:-webkit-autofill:focus,
+.pn-admin-auth-form input:-webkit-autofill:active {
+  -webkit-text-fill-color: #edf5f8 !important;
+  caret-color: #edf5f8;
+  -webkit-box-shadow: 0 0 0 1000px #07111d inset !important;
+  box-shadow: 0 0 0 1000px #07111d inset !important;
+  border: 1px solid rgba(0, 201, 167, 0.35);
+  transition: background-color 9999s ease-out 0s;
+}

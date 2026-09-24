@@ -1,0 +1,372 @@
+.pn-payments-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 85% 5%, rgba(0, 180, 255, 0.1), transparent 28rem),
+    radial-gradient(circle at 10% 30%, rgba(0, 230, 118, 0.07), transparent 25rem),
+    #07101f;
+  color: #fff;
+}
+
+.pn-payments-header {
+  min-height: 92px;
+  padding: 14px clamp(24px, 5vw, 78px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(7,16,31,.88);
+}
+
+.pn-payments-brand img {
+  width: 150px;
+  display: block;
+}
+
+.pn-payments-header nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.pn-payments-header nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pn-payments-header nav a:hover {
+  color: #00e676;
+}
+
+.pn-payments-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 60px 0 90px;
+}
+
+.pn-payments-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.pn-payments-title p,
+.pn-refund-head p {
+  margin: 0 0 8px;
+  color: #00e676;
+  letter-spacing: .16em;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.pn-payments-title h1 {
+  margin: 0 0 10px;
+  font-size: clamp(36px, 5vw, 58px);
+}
+
+.pn-payments-title h1 em {
+  color: #00e676;
+  font-style: normal;
+}
+
+.pn-payments-title span {
+  color: #94a3b8;
+}
+
+.pn-payments-title > button,
+.pn-payment-actions button,
+.pn-refund-submit {
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 20px;
+  font-weight: 800;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00e676, #00b4ff);
+  color: #041019;
+}
+
+.pn-payments-alert {
+  margin-bottom: 22px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pn-payments-alert.error {
+  background: rgba(239,68,68,.12);
+  border: 1px solid rgba(239,68,68,.35);
+}
+
+.pn-payments-alert.success {
+  background: rgba(0,230,118,.1);
+  border: 1px solid rgba(0,230,118,.3);
+}
+
+.pn-payments-alert button,
+.pn-refund-head > button {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.pn-refund-panel,
+.pn-payment-history-card {
+  border: 1px solid rgba(0,201,167,.18);
+  background: rgba(15,23,42,.84);
+  box-shadow: 0 20px 60px rgba(0,0,0,.18);
+  border-radius: 18px;
+}
+
+.pn-refund-panel {
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+.pn-refund-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pn-refund-head h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.pn-refund-panel form {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 16px;
+  align-items: end;
+  margin-top: 22px;
+}
+
+.pn-refund-panel label {
+  display: grid;
+  gap: 8px;
+}
+
+.pn-refund-panel label span {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pn-refund-panel select,
+.pn-refund-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 11px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #fff;
+  padding: 12px;
+}
+
+.pn-refund-panel small {
+  display: block;
+  color: #64748b;
+  margin-top: 14px;
+}
+
+.pn-payment-history {
+  display: grid;
+  gap: 18px;
+}
+
+.pn-payment-history-card {
+  padding: 24px;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.pn-payment-history-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0,230,118,.35);
+}
+
+.pn-payment-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.pn-payment-card-head > div {
+  display: grid;
+  gap: 5px;
+}
+
+.pn-payment-card-head small {
+  color: #00c9a7;
+  font-weight: 800;
+}
+
+.pn-payment-card-head strong {
+  font-size: 27px;
+}
+
+.pn-payment-status {
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  background: #1e293b;
+}
+
+.pn-payment-status.status-success,
+.pn-payment-status.status-refunded {
+  color: #00e676;
+  background: rgba(0,230,118,.1);
+}
+
+.pn-payment-status.status-refund_pending {
+  color: #00b4ff;
+  background: rgba(0,180,255,.1);
+}
+
+.pn-payment-status.status-failed {
+  color: #f87171;
+  background: rgba(248,113,113,.1);
+}
+
+.pn-payment-details,
+.pn-refund-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  padding: 20px 0;
+}
+
+.pn-payment-details div,
+.pn-refund-info div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.pn-payment-details span,
+.pn-refund-info span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.pn-payment-details strong,
+.pn-refund-info strong {
+  color: #e2e8f0;
+  overflow-wrap: anywhere;
+}
+
+.pn-refund-info {
+  border-top: 1px solid rgba(255,255,255,.07);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.pn-refund-info .full {
+  grid-column: 1 / -1;
+}
+
+.pn-payment-actions {
+  padding-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pn-payment-actions span {
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pn-payments-state {
+  min-height: 260px;
+  border: 1px dashed #334155;
+  border-radius: 18px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 8px;
+  color: #94a3b8;
+}
+
+.pn-payments-state strong {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (max-width: 760px) {
+  .pn-payments-header {
+    padding: 12px 18px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pn-payments-brand img {
+    width: 125px;
+  }
+
+  .pn-payments-header nav {
+    width: 100%;
+    overflow-x: auto;
+    gap: 18px;
+    padding-bottom: 8px;
+  }
+
+  .pn-payments-header nav a {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .pn-payments-shell {
+    width: min(100% - 28px, 1180px);
+    padding: 38px 0 70px;
+  }
+
+  .pn-payments-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pn-payments-title h1 {
+    font-size: 38px;
+  }
+
+  .pn-refund-panel form {
+    grid-template-columns: 1fr;
+  }
+
+  .pn-payment-details,
+  .pn-refund-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pn-payment-card-head {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 430px) {
+  .pn-payment-details,
+  .pn-refund-info {
+    grid-template-columns: 1fr;
+  }
+
+  .pn-payment-history-card,
+  .pn-refund-panel {
+    padding: 18px;
+  }
+
+  .pn-payment-card-head strong {
+    font-size: 23px;
+  }
+}
