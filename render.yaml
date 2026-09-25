@@ -2,6 +2,7 @@ services:
   - type: web
     name: smart-parking-backend
     runtime: docker
+    plan: free
     rootDir: backend
     healthCheckPath: /api/health
     envVars:
