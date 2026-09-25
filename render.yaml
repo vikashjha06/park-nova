@@ -17,7 +17,7 @@ services:
         sync: false
       - key: MAIL_USERNAME
         sync: false
-      - key: MAIL_PASSWORD
+      - key: MAIL_APP_PASSWORD
         sync: false
       - key: FRONTEND_URL
         sync: false
