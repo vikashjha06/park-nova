@@ -287,14 +287,16 @@ Local frontend: `http://localhost:5173`.
 
 ## 🚀 Future Roadmap
 
-The following are **planned ideas**, not features currently available in Park Nova:
+The following are **planned ideas** and are not implemented in the current version:
 
-- [ ] **Smart Parking Match:** Suggest slots based on vehicle type, price, distance from the destination, and estimated travel time. Show why each slot was recommended.
-- [ ] **Arrival-Aware Booking:** Let customers enter an expected arrival time. Send a reminder before the booking starts and show a clear grace period for late arrival.
-- [ ] **Automatic Waitlist:** When a parking area is full, let customers join a queue for their selected time. Offer a newly available slot to the next customer for a limited confirmation period.
-- [ ] **Quick Rebooking:** Save a vehicle and favorite parking area for repeat trips, while checking the latest availability and price before every booking.
-- [ ] **Entry and Exit QR:** Give each booking a short-lived QR code. Staff can scan it at entry and exit to update the booking status and prevent the same code being reused.
-- [ ] **Busy-Hour Forecast:** Use past bookings to estimate when a parking area is
+- [ ] **Smart Parking Match:** Suggest slots using vehicle type, price, walking distance to the destination, and travel time. Show why each slot was recommended.
+- [ ] **Arrival-Aware Booking:** Let customers enter their expected arrival time, receive a reminder, and see a clear grace period before a no-show reservation is released.
+- [ ] **Automatic Waitlist:** When a parking area is full, let customers join a queue for their chosen time. Offer the next free slot to the next customer for a limited confirmation period.
+- [ ] **Quick Rebooking:** Save a vehicle and favorite parking area for repeat visits while checking the current price and availability before each booking.
+- [ ] **Entry and Exit QR:** Generate a short-lived booking QR code that parking staff can validate at entry and exit to update booking status.
+- [ ] **Busy-Hour Forecast:** Estimate busy hours from previous bookings. Display the forecast separately from the actual available-slot count.
+- [ ] **Monthly Pass Flex Days:** Let pass holders request a limited number of pause days under admin-defined rules, with the revised expiry date shown before confirmation.
+- [ ] **Operator Insights:** Show admins occupancy, cancellations, no-shows, and recorded revenue for each parking area.
 
 ---
 
