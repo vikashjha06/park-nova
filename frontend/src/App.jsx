@@ -11,6 +11,7 @@ import ResetPasswordPage from "./pages/auth/ResetPasswordPage";
 import OAuthSuccessPage from "./pages/auth/OAuthSuccessPage";
 
 import FeatureDetailPage from "./pages/features/FeatureDetailPage";
+import PrivacyPage from "./pages/legal/PrivacyPage";
 
 import ProtectedRoute from "./components/routing/ProtectedRoute";
 
@@ -77,6 +78,8 @@ function App() {
         path="/features/:featureId"
         element={<FeatureDetailPage />}
       />
+
+      <Route path="/privacy" element={<PrivacyPage />} />
 
       {/* =========================
           CUSTOMER AUTH
